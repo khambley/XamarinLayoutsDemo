@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLayoutsDemo.MainPage"
+             BackgroundColor="#B71C1C">
+
+   <!--<StackLayout Orientation="Horizontal">
+       <Label Text="Label1" FontSize="Large" />
+       <Label Text="Label2" FontSize="Large" />
+       <Label Text="Label3" FontSize="Large" />
+   </StackLayout>-->
+
+    <!--Sign in Page - Centered-->
+    <!--<StackLayout VerticalOptions="Center">
+        <Entry Placeholder="User Email" />
+        <Entry Placeholder="User Password" />
+        <Button Text="Login" HorizontalOptions="FillAndExpand" />
+    </StackLayout>-->
+
+    <!--Sign in Page w/Logo - Centered-->
+    <!--<StackLayout VerticalOptions="Start">
+        <Image HeightRequest="300"
+               WidthRequest="300"
+               Source="comed_logo_hrz_sm_wht_rgb.png"
+               HorizontalOptions="Center" />
+
+        <StackLayout Margin="20">
+            <Entry Placeholder="User Email"
+                   TextColor="White"/>
+
+            <Entry Placeholder="User Password"
+                   IsPassword="True"
+                   TextColor="White"/>
+
+            <Button Text="Login"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"/>
+        </StackLayout>
+    </StackLayout>-->
+
+    <!--Signin Page with 2 images side by side - Centered-->
+    <StackLayout VerticalOptions="Start">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Image Source="comed_logo_hrz_sm_wht_rgb.png"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+
+            <Image Source="comed_logo_hrz_sm_wht_rgb.png"
+                   HeightRequest="200"
+                   WidthRequest="200" />
+
+        </StackLayout>
+        <Entry TextColor="White"
+               Placeholder="Username/Email"
+               PlaceholderColor="#B71C1C" />
+
+        <Entry TextColor="White"
+               Placeholder="Password"
+               PlaceholderColor="#B71C1C"
+               IsPassword="True" />
+
+        <Button Text="Login"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="White"
+                TextColor="#B71C1C"
+                Margin="15" />
+
+        <Button Text="Go to Scrollview Page"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="White"
+                TextColor="#B71C1C"
+                Clicked="ScrollviewPageButton_Clicked" />
+    </StackLayout>
+
+
+</ContentPage>
