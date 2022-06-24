@@ -2,10 +2,17 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="XamarinLayoutsDemo.ScrollviewPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Scrollview Page" />
+    x:Class="XamarinLayoutsDemo.ScrollviewPage" BackgroundColor="#B71C1C">
+
+    <ScrollView>
+        <StackLayout Margin="20,200,20,0">
+            <Image Source="comed_logo_hrz_sm_wht_rgb.png" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center" />
+            <Entry Placeholder="Enter Username" />
+            <Entry Placeholder="Email" />
+            <Entry Placeholder="Password" IsPassword="True" />
+            <Entry Placeholder="Confirm Password" IsPassword="True" />
+            <Button Text="Sign Up" />
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
+
 </ContentPage>
