@@ -53,24 +53,42 @@
         </StackLayout>
         <Entry TextColor="White"
                Placeholder="Username/Email"
-               PlaceholderColor="#B71C1C" />
+               PlaceholderColor="Black"
+               BackgroundColor="White" />
 
         <Entry TextColor="White"
                Placeholder="Password"
-               PlaceholderColor="#B71C1C"
-               IsPassword="True" />
+               PlaceholderColor="Black"
+               IsPassword="True"
+               BackgroundColor="White"/>
 
         <Button Text="Login"
                 HorizontalOptions="FillAndExpand"
-                BackgroundColor="White"
+                BackgroundColor="LightGray"
                 TextColor="#B71C1C"
-                Margin="15" />
+                Margin="5" />
 
-        <Button Text="Go to Scrollview Page"
+        <Button Text="Go to Scrollview Page -->"
                 HorizontalOptions="FillAndExpand"
                 BackgroundColor="White"
                 TextColor="#B71C1C"
-                Clicked="ScrollviewPageButton_Clicked" />
+                Clicked="ScrollviewPageButton_Clicked"
+                Margin="5" />
+        
+        <Button Text="Go to Grid Page -->"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="White"
+                TextColor="#B71C1C"
+                Clicked="GridviewPageButton_Clicked"
+                Margin="5"/>
+
+        <Button Text="Go to Span Grid Page -->"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="White"
+                TextColor="#B71C1C"
+                Clicked="SpanGridPageButton_Clicked"
+                Margin="5"/>
+
     </StackLayout>
 
 
