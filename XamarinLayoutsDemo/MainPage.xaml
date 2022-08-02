@@ -40,56 +40,78 @@
     </StackLayout>-->
 
     <!--Signin Page with 2 images side by side - Centered-->
-    <StackLayout VerticalOptions="Start">
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Image Source="comed_logo_hrz_sm_wht_rgb.png"
-                   HeightRequest="200"
-                   WidthRequest="200" />
+    <ScrollView>
+        <StackLayout VerticalOptions="Start">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="comed_logo_hrz_sm_wht_rgb.png"
+                       HeightRequest="200"
+                       WidthRequest="200" />
 
-            <Image Source="comed_logo_hrz_sm_wht_rgb.png"
-                   HeightRequest="200"
-                   WidthRequest="200" />
+                <Image Source="comed_logo_hrz_sm_wht_rgb.png"
+                       HeightRequest="200"
+                       WidthRequest="200" />
+
+            </StackLayout>
+            <Entry TextColor="White"
+                   Placeholder="Username/Email"
+                   PlaceholderColor="Black"
+                   BackgroundColor="White" />
+
+            <Entry TextColor="White"
+                   Placeholder="Password"
+                   PlaceholderColor="Black"
+                   IsPassword="True"
+                   BackgroundColor="White"/>
+
+            <Button Text="Login"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="LightGray"
+                    TextColor="#B71C1C"
+                    Margin="5" />
+
+            <Button Text="Go to Scrollview Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="ScrollviewPageButton_Clicked"
+                    Margin="5" />
+
+            <Button Text="Go to Grid Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="GridviewPageButton_Clicked"
+                    Margin="5"/>
+
+            <Button Text="Go to Span Grid Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="SpanGridPageButton_Clicked"
+                    Margin="5"/>
+
+            <Button Text="Go to ListView Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="ListViewPageButton_Clicked"
+                    Margin="5"/>
+
+            <Button Text="Go to CardView Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="CardViewPageButton_Clicked"
+                    Margin="5"/>
+
+            <Button Text="Go to MixLayoutView Page -->"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="White"
+                    TextColor="#B71C1C"
+                    Clicked="MixLayoutViewPageButton_Clicked"
+                    Margin="5"/>
 
         </StackLayout>
-        <Entry TextColor="White"
-               Placeholder="Username/Email"
-               PlaceholderColor="Black"
-               BackgroundColor="White" />
-
-        <Entry TextColor="White"
-               Placeholder="Password"
-               PlaceholderColor="Black"
-               IsPassword="True"
-               BackgroundColor="White"/>
-
-        <Button Text="Login"
-                HorizontalOptions="FillAndExpand"
-                BackgroundColor="LightGray"
-                TextColor="#B71C1C"
-                Margin="5" />
-
-        <Button Text="Go to Scrollview Page -->"
-                HorizontalOptions="FillAndExpand"
-                BackgroundColor="White"
-                TextColor="#B71C1C"
-                Clicked="ScrollviewPageButton_Clicked"
-                Margin="5" />
-        
-        <Button Text="Go to Grid Page -->"
-                HorizontalOptions="FillAndExpand"
-                BackgroundColor="White"
-                TextColor="#B71C1C"
-                Clicked="GridviewPageButton_Clicked"
-                Margin="5"/>
-
-        <Button Text="Go to Span Grid Page -->"
-                HorizontalOptions="FillAndExpand"
-                BackgroundColor="White"
-                TextColor="#B71C1C"
-                Clicked="SpanGridPageButton_Clicked"
-                Margin="5"/>
-
-    </StackLayout>
-
+    </ScrollView>
 
 </ContentPage>

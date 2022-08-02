@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLayoutsDemo.MixLayoutViewPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <RelativeLayout Grid.Row="0" BackgroundColor="White">
+            <BoxView x:Name="YellowBox" BackgroundColor="Yellow" Margin="15,15,0,0" HeightRequest="30" WidthRequest="30" />
+            <BoxView BackgroundColor="Red" 
+                     HeightRequest="20"
+                     WidthRequest="20"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property=Y,ElementName=YellowBox,Constant=-5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, Property=X,ElementName=YellowBox,Constant=20}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView,Property=Height,ElementName=YellowBox,Factor=0.6}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView,Property=Width,ElementName=YellowBox,Factor=0.6}"
+                     />
+        </RelativeLayout>
+        <StackLayout Grid.Row="1" Margin="20">
+            
+            <Button Text="Button 1" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="Red" 
+                    TextColor="White" />
+
+            <Button Text="Button 2" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="Red" 
+                    TextColor="White" />
+
+            <Button Text="Button 3" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="Red" 
+                    TextColor="White" />
+
+            <Button Text="Button 4" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="Red" 
+                    TextColor="White" />
+
+            <Button Text="Button 5" 
+                    HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="Red" 
+                    TextColor="White" />
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
